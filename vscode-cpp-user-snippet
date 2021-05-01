@@ -10,20 +10,45 @@
 			"#include<bits/stdc++.h>",
 			"using namespace std;",
 			"typedef long long ll;",
-			"int main()",
+			"void file_i_o()",
 			"{",
 			"\t#ifndef ONLINE_JUDGE",
 			"\t\tfreopen(\"in.txt\",\"r\",stdin);",
 			"\t\tfreopen(\"out.txt\",\"w\",stdout);",
 			"\t#endif",
+			"\tios_base::sync_with_stdio(false);",
+			"\tcin.tie(NULL);",
+			"}",
+			"int main()",
+			"{",
+			"\tfile_i_o();",	
 			"\tint t=1;",
-			"\tcin>>t;",
+			"\t$1cin>>t;",
 			"\twhile(t--)",
 			"\t{",
-			"\t\t$1",
+			"\t\t$0",
 			"\t}",
 			"}"
 		],
 		"description": "KRD's Main"
+	},
+	"modular":{
+		"prefix": "modp",
+		"body":[
+			"ll modp(ll a,ll b,ll m)",
+			"{",
+			"\ta=a%m;",
+			"\tll res=1;",
+			"\twhile(b)",
+			"\t{",
+			"\t\tif(b&1)",
+			"\t\t\tres=res*a%m;",
+			"\t\ta=a*a%m;",
+			"\t\tb=b>>1;",
+			"\t}",
+			"\treturn res;",
+			"}"
+		]
+		
 	}	
 }
