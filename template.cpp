@@ -1,14 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-int main()
+void file_i_o()
 {
     #ifndef ONLINE_JUDGE
         freopen("in.txt","r",stdin);
         freopen("out.txt","w",stdout);
     #endif
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+}
+int main()
+{
+    file_i_o();
     int t=1;
-    cin>>t;  // If there are no test cases then comment it.
+    cin>>t;
     while(t--)
     {
         
